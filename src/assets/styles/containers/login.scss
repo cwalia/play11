@@ -1,0 +1,19 @@
+.login{
+    padding: 7em 50px 50px 50px;
+    text-align: center;
+    .btn-dark{
+        margin-top:0.5em;
+    }
+    .b-icon{
+        color: $blue;
+    }
+    .register{
+        font-weight: 700;
+        color: $blue;
+        cursor: pointer;
+    }
+    .logo{
+        width: 50%;
+        margin:0.5em 0;
+    }
+}
