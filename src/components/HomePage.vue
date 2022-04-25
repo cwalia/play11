@@ -1,5 +1,5 @@
 <template>
-  <div class="common-select">
+  <div>
     hey HomePage
   </div>
 </template>
