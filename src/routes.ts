@@ -1,14 +1,19 @@
 import Vue from "vue";
 import VueRouter, {RouterOptions} from 'vue-router'
 
-const HomePage = () => import("@/components/login/Login.vue");
+const Login = () => import("@/components/login/Login.vue");
+const Register = () => import("@/components/login/Register.vue");
+
 Vue.use(VueRouter);
 
 export const routerOptions: RouterOptions = {
   routes: [
     {
       path: '/',
-      component: HomePage,
+      component: Login,
+    },{
+      path: '/register',
+      component: Register,
     }
   ],
   mode: 'history',

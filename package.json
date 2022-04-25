@@ -1,5 +1,5 @@
 {
-  "name": "pub_search",
+  "name": "play-11",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@bachdgvn/vue-otp-input": "^1.0.8",
     "@types/vue-select": "^3.11.1",
     "@vue/composition-api": "^1.0.0-rc.6",
     "axios": "^0.21.1",

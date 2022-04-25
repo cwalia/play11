@@ -1,19 +1,78 @@
-.login{
+.login {
     padding: 7em 50px 50px 50px;
-    text-align: center;
-    .btn-dark{
-        margin-top:0.5em;
+    .btn-primary {
+        margin-top: 0.5em;
     }
-    .b-icon{
+
+    .b-icon {
         color: $blue;
     }
-    .register{
+
+    .registerText {
         font-weight: 700;
         color: $blue;
         cursor: pointer;
     }
-    .logo{
+
+    .logo {
         width: 50%;
-        margin:0.5em 0;
+        margin: 0.5em 0;
     }
+    
+}
+
+.navBar{
+    color: $white;
+    font-weight: 500;
+    background-color: $blue;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    .b-icon{
+        cursor: pointer;
+        margin-right: 10px;
+    }
+}
+.textCenter{
+    text-align: center;
+}
+.otp{
+    padding-top: 2em !important;
+    .editButton{
+        margin-left: 10px;
+        width: 25px;
+        background-color: $green;
+        text-align: center;
+        border-radius: 50%;
+    }
+}
+.otpDiv{
+    justify-content: space-between;
+    margin: 25px 0;
+}
+.register{
+    padding-top: 2em !important;
+    .marginBottom{
+        margin-bottom: 10px !important;
+    }
+}
+.otp-input {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 0 5px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    &.error {
+        border: 1px solid red !important;
+    }
+}
+
+.otp-input::-webkit-inner-spin-button,
+.otp-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

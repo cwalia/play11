@@ -1,9 +1,27 @@
-.btn-dark{
+.btn-primary{
     background-color: $blue;
     border-color: $blue;
-
+}
+.btn-primary.disabled, .btn-primary:disabled{
+    background-color: $blue;
+    border-color: $blue;
+    opacity: 0.5;
+}
+.btn-primary:hover{
+    background-color: $blueDark;
+    border-color: $blueDark;
 }
 .btn-light{
     background-color: $white;
     border-color: $white;
+}
+.textBtn{
+    background-color: transparent;
+    border: none;
+}
+button[disabled]{
+    cursor: not-allowed !important;
+}
+.marginBottom{
+    margin-bottom: 25px;
 }
