@@ -14,7 +14,7 @@
           <img class="teamLogo" :src="item.team1_logo" style="margin-right:5px">
           {{item.team1_short_name}}
         </div>
-        <contest-counter></contest-counter>
+        <contest-counter :start-time="item.start_dt" :end-time="item.end_dt" :match-status="item.status"></contest-counter>
         <div class="teamName flexSpace">
           {{item.team2_short_name}}
           <img class="teamLogo" :src="item.team2_logo" style="margin-left:5px">

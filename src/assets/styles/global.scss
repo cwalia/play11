@@ -45,6 +45,7 @@ button[disabled]{
 }
 .appBody{
     padding: 20px;
-    height: calc(100vh - 135px);
-    overflow: auto;
 }
+.ps {
+    height: calc(100vh - 165px);
+  }

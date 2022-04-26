@@ -8,7 +8,10 @@ import OtpInput from "@bachdgvn/vue-otp-input";
 
 // @ts-ignore
 import VueSwal from 'vue-swal'
+import PerfectScrollbar from 'vue2-perfect-scrollbar'
 
+Vue.use(PerfectScrollbar)
+Vue.use(require('vue-moment'));
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(VueSwal)
