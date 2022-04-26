@@ -1,0 +1,36 @@
+.matchList{
+    width: 100%;
+    background-color: $white;
+    border-radius: 10px;
+    margin: 20px 0;
+    .headList{
+        padding: 5px 10px;
+        border-bottom: 1px solid $grey;
+        font-size: 0.8em;
+        color: #9E9FA1;
+        .status{
+            color: #1EC100;
+        }
+    }
+    .bodyList{
+        padding: 20px 10px;
+        font-weight: 500;
+        color: #1A70CC;
+        .teamLogo{
+            border-radius: 50%;
+            width: 35px;
+        }
+        .teamName{
+            font-size: 0.9em;
+            color: $black;
+        }
+    }
+    .footerList{
+        text-align: center;
+        font-size: 0.7em;
+        background-color: $grey;
+        padding: 5px 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}

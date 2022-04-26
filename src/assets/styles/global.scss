@@ -38,3 +38,13 @@ button[disabled]{
         width: 120px;
     }
 }
+.flexSpace{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.appBody{
+    padding: 20px;
+    height: calc(100vh - 135px);
+    overflow: auto;
+}

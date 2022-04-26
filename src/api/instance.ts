@@ -1,13 +1,15 @@
 import axios from "axios";
 import store from "@/store/store";
 
-// export const baseApi = 'URL'
-
+export const baseApi = 'http://13.233.47.10/webservices/'
+const encodedKey = 'T3BTTVZ6UTZlZHFWNFB6bQ=='
 const api = axios.create({
   // @ts-ignore
-  // baseURL: baseApi,
+  baseURL: baseApi,
   timeout: 300000,
 })
+api.defaults.headers.post['content-type'] = 'application/x-www-form-urlencoded';
+api.defaults.headers.post['api_key'] = encodedKey ;
 
 export default api
 

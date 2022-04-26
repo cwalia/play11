@@ -5,7 +5,9 @@
       <img class="logo" src="../../assets/images/login/play11_logo.png">
       <b-icon icon="bell-fill" scale="1.8"></b-icon>
     </div>
-    <match-list></match-list>
+    <div class="appBody">
+      <match-list></match-list>
+    </div>
   </div>
 </template>
 
