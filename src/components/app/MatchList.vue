@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="matchList" v-for="item in matchData.list" :key="item.id">
+    <div class="matchList" v-for="item in matchData.list" :key="item.id" @click="openMatch(item.id)">
       <div class="headList flexSpace">
         <div>
           <b-icon icon="bell" />
-          {{item.team1}} v/s {{item.team2}}
+          {{item.series}}
         </div>
         <div class="status">Lineups Out</div>
       </div>
@@ -34,11 +34,11 @@ import ContestCounter from "@/components/app/ContestCounter.vue"
   components: {ContestCounter},
 })
 export default class MatchList extends Vue {
-    mounted(){
-        this.$store.dispatch('matchList/matchList')
-    }
     get matchData(){
       return this.$store.state.matchList.matchData
+    }
+    openMatch(id:any){
+      this.$router.push('league')
     }
 }
 </script>

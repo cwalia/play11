@@ -9,7 +9,10 @@ import OtpInput from "@bachdgvn/vue-otp-input";
 // @ts-ignore
 import VueSwal from 'vue-swal'
 import PerfectScrollbar from 'vue2-perfect-scrollbar'
+// @ts-ignore
+import VueCarousel from 'vue-carousel';
 
+Vue.use(VueCarousel);
 Vue.use(PerfectScrollbar)
 Vue.use(require('vue-moment'));
 Vue.use(BootstrapVue);

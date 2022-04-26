@@ -4,6 +4,7 @@ import VueRouter, {RouterOptions} from 'vue-router'
 const Login = () => import("@/components/login/Login.vue");
 const Register = () => import("@/components/login/Register.vue");
 const Dashboard = () => import("@/components/app/Dashboard.vue");
+const League = () => import("@/components/app/League.vue");
 
 Vue.use(VueRouter);
 
@@ -18,7 +19,13 @@ export const routerOptions: RouterOptions = {
     },{
       path: '/app',
       component: Dashboard,
-    }
+      children: [
+        {
+          path: 'league',
+          component: League,
+        }
+      ]
+    },
   ],
   mode: 'history',
 }

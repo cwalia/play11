@@ -29,13 +29,13 @@ button[disabled]{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 15px 20px !important;
+    padding: 5px 20px !important;
     .user{
-        width: 50px;
+        width: 35px;
         border-radius: 50%;
     }
     .logo{
-        width: 120px;
+        width: 100px;
     }
 }
 .flexSpace{
@@ -44,8 +44,40 @@ button[disabled]{
     align-items: center;
 }
 .appBody{
-    padding: 20px;
+    padding: 0 20px 20px 20px;
 }
 .ps {
-    height: calc(100vh - 165px);
-  }
+    height: calc(100vh - 265px);
+}
+
+footer {
+    display: block;
+    padding: 10px 5px 4px;
+    margin: 0;
+    background: white;
+    width: 450px;
+    position: fixed;
+    bottom: 20px;
+    overflow: hidden;
+    z-index: 999;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: space-evenly;
+    .footerNavItem{
+        cursor: pointer;
+        display: grid;
+        color: $footerNavColor;
+        .b-icon{
+            margin: 0 auto;
+        }
+        .name{
+            font-size: 0.7em;
+            font-weight: 500;
+            padding-top: 2px;
+        }
+    }
+    .selectedFNav{
+        color: $blue;
+    }
+}
+  

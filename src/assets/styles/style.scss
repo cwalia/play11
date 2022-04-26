@@ -37,6 +37,9 @@ body {
 }
 
 @media only screen and (max-width: 550px) {
+  body{
+    font-size: 0.8em;
+  }
   .appView {
     width: 100%;
     height: 100vh;
@@ -47,5 +50,8 @@ body {
   .navBar{
     border-radius: 0;
   }
-
+  footer{
+    bottom: 0;
+    border-radius: 0;
+  }
 }

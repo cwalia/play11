@@ -1,7 +1,7 @@
 import axios from "axios";
 import store from "@/store/store";
 
-export const baseApi = 'http://13.233.47.10/webservices/'
+export const baseApi = 'http://64.227.177.134/api/'
 const encodedKey = 'T3BTTVZ6UTZlZHFWNFB6bQ=='
 const api = axios.create({
   // @ts-ignore
