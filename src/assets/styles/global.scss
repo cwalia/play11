@@ -25,3 +25,16 @@ button[disabled]{
 .marginBottom{
     margin-bottom: 25px;
 }
+.navHeader{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px !important;
+    .user{
+        width: 50px;
+        border-radius: 50%;
+    }
+    .logo{
+        width: 120px;
+    }
+}

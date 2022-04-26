@@ -3,6 +3,7 @@ import VueRouter, {RouterOptions} from 'vue-router'
 
 const Login = () => import("@/components/login/Login.vue");
 const Register = () => import("@/components/login/Register.vue");
+const Dashboard = () => import("@/components/app/Dashboard.vue");
 
 Vue.use(VueRouter);
 
@@ -14,6 +15,9 @@ export const routerOptions: RouterOptions = {
     },{
       path: '/register',
       component: Register,
+    },{
+      path: '/app',
+      component: Dashboard,
     }
   ],
   mode: 'history',
