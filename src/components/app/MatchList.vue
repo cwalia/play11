@@ -14,7 +14,7 @@
           <img class="teamLogo" :src="item.team1_logo" style="margin-right:5px">
           {{item.team1_short_name}}
         </div>
-        <div>03h 01m 17s</div>
+        <contest-counter></contest-counter>
         <div class="teamName flexSpace">
           {{item.team2_short_name}}
           <img class="teamLogo" :src="item.team2_logo" style="margin-left:5px">
@@ -29,9 +29,9 @@
 
 <script lang="ts">
 import {Component, Vue, Prop} from 'vue-property-decorator';
-
+import ContestCounter from "@/components/app/ContestCounter.vue"
 @Component({
-  components: {},
+  components: {ContestCounter},
 })
 export default class MatchList extends Vue {
     mounted(){
