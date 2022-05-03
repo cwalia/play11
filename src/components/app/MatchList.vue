@@ -38,7 +38,7 @@ export default class MatchList extends Vue {
       return this.$store.state.matchList.matchData
     }
     openMatch(id:any){
-      this.$router.push('league')
+      this.$router.push('app/league/'+id)
     }
 }
 </script>

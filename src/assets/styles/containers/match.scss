@@ -1,0 +1,31 @@
+.leagueTeamHead{
+    width: 50%;
+}
+.leagueList{
+    padding: 20px;
+    .leagueHead{
+        display: flex;
+        img{
+            height: 45px;
+        }
+        .title{
+            margin-left: 10px;
+            display: grid;
+            font-weight: 700;
+            align-items: center;
+            color: $blue;
+            span{
+                color: $grey;
+                font-size: 0.8em;
+                font-weight: 400;
+                margin-top: -10px;
+            }
+        }
+    }
+
+    .leagueBody{
+        border-radius: 10px;
+        background-color: $grey;
+        height: 30px;
+    }
+}

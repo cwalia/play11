@@ -10,7 +10,7 @@
       <template v-if="matchData && matchData.banners && matchData.banners[0]">
         <b-carousel-slide :img-src="matchData.banners[0].name"></b-carousel-slide>
       </template>
-    </b-carousel>    
+    </b-carousel> 
 
     <perfect-scrollbar>
       <div class="appBody">

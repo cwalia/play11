@@ -19,12 +19,9 @@ export const routerOptions: RouterOptions = {
     },{
       path: '/app',
       component: Dashboard,
-      children: [
-        {
-          path: 'league',
-          component: League,
-        }
-      ]
+    },{
+      path: '/app/league/:id',
+      component: League,
     },
   ],
   mode: 'history',
