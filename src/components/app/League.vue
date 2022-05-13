@@ -47,7 +47,7 @@
         </div>
       </div>
     </perfect-scrollbar>
-    <b-button block variant="primary">Create Team</b-button>
+    <b-button block variant="primary" @click="createTeam()">Create Team</b-button>
   </div>
 </template>
 
@@ -74,6 +74,10 @@ export default class League extends Vue {
   }
   cancelContest(c:any){
     return c==1?'U':'C'
+  }
+  createTeam(){
+    const id = '2160'
+    this.$router.push('/app/create-team/'+id)
   }
 }
 </script>

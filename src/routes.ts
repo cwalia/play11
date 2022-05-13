@@ -5,6 +5,7 @@ const Login = () => import("@/components/login/Login.vue");
 const Register = () => import("@/components/login/Register.vue");
 const Dashboard = () => import("@/components/app/Dashboard.vue");
 const League = () => import("@/components/app/League.vue");
+const CreateTeam = () => import("@/components/common/CreateTeam.vue");
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,9 @@ export const routerOptions: RouterOptions = {
     },{
       path: '/app/league/:id',
       component: League,
+    },{
+      path: '/app/create-team/:id',
+      component: CreateTeam,
     },
   ],
   mode: 'history',
